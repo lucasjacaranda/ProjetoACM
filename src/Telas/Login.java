@@ -36,7 +36,7 @@ public class Login extends javax.swing.JFrame {
         senhaLogin = new javax.swing.JPasswordField();
         fazLogin = new javax.swing.JButton();
         cancelaLogin = new javax.swing.JButton();
-        qualOpcao = new javax.swing.JTextField();
+        qualUsuario = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -66,9 +66,9 @@ public class Login extends javax.swing.JFrame {
         cancelaLogin.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         cancelaLogin.setText("Cancelar");
 
-        qualOpcao.addActionListener(new java.awt.event.ActionListener() {
+        qualUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                qualOpcaoActionPerformed(evt);
+                qualUsuarioActionPerformed(evt);
             }
         });
 
@@ -86,7 +86,7 @@ public class Login extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(49, 49, 49)
-                        .addComponent(qualOpcao, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(qualUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
@@ -108,7 +108,7 @@ public class Login extends javax.swing.JFrame {
                 .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(qualOpcao, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(qualUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
@@ -129,27 +129,27 @@ public class Login extends javax.swing.JFrame {
 
     private void fazLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fazLoginActionPerformed
         // TODO add your handling code here:
-        if(qualOpcao.getText().equals("Newton") && senhaLogin.getText().equals("#newton@")){
-           JOptionPane.showMessageDialog(null,"Bem vindo Gerente " + qualOpcao.getText());
-           new telaUsuarios().setVisible(true);
+        if(qualUsuario.getText().equals("Newton") && senhaLogin.getText().equals("#newton@")){
+           JOptionPane.showMessageDialog(null,"Bem vindo Gerente " + qualUsuario.getText());
+           new TelaGerente().setVisible(true);
            
            this.dispose();
            
            
        } 
-        else if(qualOpcao.getText().equals("Lucas") && senhaLogin.getText().equals("lucas44") || 
-                qualOpcao.getText().equals("Marco") && senhaLogin.getText().equals("marco23") ||
-                qualOpcao.getText().equals("Joao") && senhaLogin.getText().equals("joao67")){
-           JOptionPane.showMessageDialog(null,"Bem vindo medico " + qualOpcao.getText());
-           new telaUsuarios().setVisible(true);
+        else if(qualUsuario.getText().equals("Lucas") && senhaLogin.getText().equals("lucas44") || 
+                qualUsuario.getText().equals("Marco") && senhaLogin.getText().equals("marco23") ||
+                qualUsuario.getText().equals("Joao") && senhaLogin.getText().equals("joao67")){
+           JOptionPane.showMessageDialog(null,"Bem vindo medico " + qualUsuario.getText());
+           new TelaMedico().setVisible(true);
            
            this.dispose();
            
            
        } 
-       else  if(qualOpcao.getText().equals("Janaina") && senhaLogin.getText().equals("jana34")){
-           JOptionPane.showMessageDialog(null,"Bem vindo Secretaria " + qualOpcao.getText());
-           new telaUsuarios().setVisible(true);
+       else  if(qualUsuario.getText().equals("Janaina") && senhaLogin.getText().equals("jana34")){
+           JOptionPane.showMessageDialog(null,"Bem vindo Secretaria " + qualUsuario.getText());
+           new TelaFuncionario().setVisible(true);
            
            this.dispose();
            
@@ -160,9 +160,9 @@ public class Login extends javax.swing.JFrame {
        }
     }//GEN-LAST:event_fazLoginActionPerformed
 
-    private void qualOpcaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qualOpcaoActionPerformed
+    private void qualUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qualUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_qualOpcaoActionPerformed
+    }//GEN-LAST:event_qualUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -205,7 +205,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel nomeHospital;
-    private javax.swing.JTextField qualOpcao;
+    private javax.swing.JTextField qualUsuario;
     private javax.swing.JPasswordField senhaLogin;
     // End of variables declaration//GEN-END:variables
 }

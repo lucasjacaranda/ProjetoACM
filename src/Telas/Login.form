@@ -40,7 +40,7 @@
                   <Group type="102" attributes="0">
                       <Component id="jLabel2" min="-2" pref="97" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                      <Component id="qualOpcao" min="-2" pref="173" max="-2" attributes="0"/>
+                      <Component id="qualUsuario" min="-2" pref="173" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -71,7 +71,7 @@
               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel2" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                  <Component id="qualOpcao" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="qualUsuario" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -134,9 +134,9 @@
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="qualOpcao">
+    <Component class="javax.swing.JTextField" name="qualUsuario">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="qualOpcaoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="qualUsuarioActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
