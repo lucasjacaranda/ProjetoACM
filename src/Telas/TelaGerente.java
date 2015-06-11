@@ -7,6 +7,8 @@
 
 package Telas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author newton
@@ -115,6 +117,11 @@ public class TelaGerente extends javax.swing.JFrame {
 
         CadastroVendedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         CadastroVendedor.setText("Cadastrar");
+        CadastroVendedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CadastroVendedorActionPerformed(evt);
+            }
+        });
 
         CancelaCadastroVendedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         CancelaCadastroVendedor.setText("Cancelar");
@@ -370,6 +377,23 @@ public class TelaGerente extends javax.swing.JFrame {
     private void CadastrarLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CadastrarLoginActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CadastrarLoginActionPerformed
+
+    private void CadastroVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CadastroVendedorActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null,"Cadastro :  " + 
+                "\n Nome : " + CadastrarNomeVendedor.getText() + 
+                "\n Cpf  :"  + CpfVendedor.getText() + 
+                "\n RG : " + RgVendedor.getText() + 
+                "\n Telefone : " + TelefoneVendedor.getText() +
+                "\n Endereco : " + EnderecoVendedor.getText() +
+                "\n Complemento : " + ComplementoVendedor.getText() + 
+                "\n Estado Civil : " + EstadoCivilVendedor.getText() +
+                "\n Cep : " + CepVendedor.getText() + 
+                "\n Bairro : " + BairroVendedor.getText() +
+                "\n Estado : " + EstadoVendedor.getText() +
+                "\n Login : " + CadastrarLogin.getText() + 
+                "\n Senha : " + CadastrarSenha.getText());
+    }//GEN-LAST:event_CadastroVendedorActionPerformed
 
     /**
      * @param args the command line arguments
