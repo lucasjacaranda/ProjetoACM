@@ -86,7 +86,7 @@ public class TelaGerente extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setText("Cadastro de vendedor");
+        jLabel2.setText("Cadastro de funcionario");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("Cpf :");
