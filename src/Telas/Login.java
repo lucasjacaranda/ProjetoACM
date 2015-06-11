@@ -129,7 +129,7 @@ public class Login extends javax.swing.JFrame {
 
     private void fazLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fazLoginActionPerformed
         // TODO add your handling code here:
-        if(qualUsuario.getText().equals("Newton") && senhaLogin.getText().equals("#newton@")){
+        if(qualUsuario.getText().equals("newton") && senhaLogin.getText().equals("newton")){
            JOptionPane.showMessageDialog(null,"Bem vindo Gerente " + qualUsuario.getText());
            new TelaGerente().setVisible(true);
            
@@ -137,7 +137,7 @@ public class Login extends javax.swing.JFrame {
            
            
        } 
-        else if(qualUsuario.getText().equals("Lucas") && senhaLogin.getText().equals("lucas44") || 
+        else if(qualUsuario.getText().equals("lucas") && senhaLogin.getText().equals("lucas") || 
                 qualUsuario.getText().equals("Marco") && senhaLogin.getText().equals("marco23") ||
                 qualUsuario.getText().equals("Joao") && senhaLogin.getText().equals("joao67")){
            JOptionPane.showMessageDialog(null,"Bem vindo medico " + qualUsuario.getText());
@@ -147,7 +147,7 @@ public class Login extends javax.swing.JFrame {
            
            
        } 
-       else  if(qualUsuario.getText().equals("Janaina") && senhaLogin.getText().equals("jana34")){
+       else  if(qualUsuario.getText().equals("janaina") && senhaLogin.getText().equals("janaina")){
            JOptionPane.showMessageDialog(null,"Bem vindo Secretaria " + qualUsuario.getText());
            new TelaFuncionario().setVisible(true);
            
